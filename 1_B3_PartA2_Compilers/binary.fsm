@@ -1,0 +1,11 @@
+START=SZ
+SZ:   0 -> S0
+      * -> BAD
+S0:   * -> BAD
+      b,B -> S1
+S1:   0,1 -> S2
+      * -> BAD
+S2:   0,1 -> S2
+      * -> BAD
+      \n -> GOOD
+GOOD(OK):

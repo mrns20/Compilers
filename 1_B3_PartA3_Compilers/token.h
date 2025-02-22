@@ -1,0 +1,12 @@
+#define DELIMITER 1
+#define DECIMAL 2 
+#define BINARY 3  
+#define FLOAT 4 
+#define IMAGINARY 5      
+#define IDENTIFIER 6     
+#define STRING 7   
+#define COMMENT 8
+#define UNKNOWN_TOKEN 9
+#define KEYWORD 10
+#define OPERATOR 11
+#define S_WORD 12

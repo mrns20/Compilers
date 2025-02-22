@@ -1,0 +1,235 @@
+#Valid cases
+
+#Operators
++
+-
+*
+**
+/
+//
+%
+@
+<<
+>>
+&
+|
+^
+~
+<
+>
+<=
+>=
+==
+!=
+
+#Keywords
+False
+class
+finally
+is
+return
+None
+continue
+for
+lambda
+try
+True
+def
+from
+nonlocal
+while
+and
+del
+global
+not
+with
+as
+elif
+if
+or
+yield
+assert
+else
+import
+pass
+break
+except
+in
+raise
+
+#Special words
+(
+)
+[
+]
+{
+}
+,
+:
+.
+;
+@
+=
+->
++=
+-=
+*=
+/=
+//=
+%=
+@=
+&=
+|=
+^=
+>>=
+<<=
+**=
+
+#Integer
+0
+1
++7
+-10
++99999999999999
+
+#Binary
+0b1111
+0B0000
+0b010101001010101
+
+#Float
+1.2
++30.4
+-0.01
+1e10
+1E10
+1e-10
+1E-10
+1e+10
+1E+10
+-1.3e7
+1.2E10
+1.5e-10
+1.2E-5
+1.3e+10
+1.5E+2
+0e0
+
+#Imaginary
+1j
++2j
+-3j
+99999999999j
+1.2j
+1e10j
+1E5j
+1e-2j
+1E-10j
+-1e+10j
+7E+4j
+10.01e2j
+1.2E10j
+1.5e-10j
+-1.2E-3j
+1.3e+10j
+3.2E+1j
+
+#Indentifiers
+nikos
+flag_
+sum3
+nikos_123
+_test
+
+#Strings
+"test 1"
+'test 2'
+"test 3 \n \\ \" \' \r "
+"Hello world!"
+'Mark said, \"Boo!\"\n'
+"Dimitris, Marinos, Nikos, Nikos"
+"min = %d, max = %d, sum = %d, MO = %.2f"
+
+#Valid examples of general expressions
+name = "nikos" ;
+a = b + 1 ;
+count += 1 ;
+sum += 2 ;
+pow2 = a ^ 2 ;
+* i = & value ;
+
+if ( a == 0 )
+{
+	flag = 0 ;
+}
+elif ( a == 1 )
+{
+	flag = 1 ;
+}
+else
+{
+	return 0 ;
+}
+
+x = 10 ;
+while ( x > 0 )
+{
+	
+	if ( flag != 0 )
+		continue ;
+	else
+		x -= 1 ;
+}
+
+#Ιnvalid cases
+
+#Integer
+01
+-+1
+7+
+10b
+
+#Binary
+0b
+0B
+1b1111
+0B2
+
+#Float
+1.
+.2
+00.1
+1e
+1.5e
+0.1.2
+
+#Imaginary
+0j
+03j
+0.j
+10ej
+2e-j
+5.4ej
+
+#Identifiers
+9nikos
+2_Sum
+
+#Strings
+"test 1'
+'test 2"
+"test 3
+'test 4
+"test 5 \"
+"test 6 \ n"
+"test 7 ' "
+'test 8 " '
+
+#Invalid examples of general expressions
+a=5;
+sum=sum+2;
+count+=1;
+name="nikos"
+x<5
+if(y!=0)
+valBool=True;

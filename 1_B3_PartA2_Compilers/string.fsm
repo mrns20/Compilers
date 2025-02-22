@@ -1,0 +1,22 @@
+START=SZ
+SZ:   ' -> S0
+      " -> S1
+	  * -> BAD
+S0:   * -> S0
+      ' -> S2
+      \\ -> S3
+      "\n -> BAD
+S1:   * -> S1
+      " -> S5
+      \\ -> S4
+      '\n -> BAD
+S2:   * -> BAD
+      \n -> GOOD
+S3:   n,r,',",\\ -> S0
+	  * -> BAD
+S4:   n,r,',",\\ -> S1
+	  * -> BAD
+S5:   * -> BAD
+	  \n -> GOOD
+GOOD(OK):
+
